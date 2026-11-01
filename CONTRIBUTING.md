@@ -60,7 +60,8 @@ status; OpenSpec holds what the system does and how each change will do it.
    it's about, labelled for who resolves it. A **must-fix** is fixed, or answered with a reason (a fix needs no
    reply, since the review sees the push; a reason is posted before any push), and the review resolves it on its
    next run once it's addressed. A **nit** is fixed, or answered (a follow-up issue, or why it
-   isn't worth it), and the author resolves it. A **decision** is the maintainer's, and so is a must-fix still in
+   isn't worth it), and the author resolves it, or the review does once a push has fixed it. A **decision** is the
+   maintainer's, and so is a must-fix still in
    dispute after the re-review. The review runs again on each push, and on each reply to one of its
    open must-fixes, so a must-fix answered with a reply alone is judged when the reply is posted. A required check,
    `claude review completed`, holds the pull request until the review of its head has completed; if the review was
